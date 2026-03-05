@@ -1,0 +1,70 @@
+<! DOCTYPE HTML>
+<HTML lang=“es”>
+<HEAD> 
+<TITLE>Video</TITLE> 
+</HEAD>
+<BODY>
+    <script>
+alert("En memoria de Leon, también llamado Nano");
+</script>
+    <video src="Huroncete.mp4" id="Nano" width=60% autoplay="true" controls></video> <IMG src="Sad.jpg" width=600></IMG>
+    <br><br>
+    <button onclick="velocidad(0)" type="button"><IMG SRC="Pause.PNG" height=30></IMG></button>
+    <button onclick="velocidad(1)" type="button"><IMG SRC="Play.PNG" height=30></IMG></button>
+    <button onclick="velocidad(0.5)" type="button">1/2</button>
+    <button onclick="velocidad(2)" type="button"><IMG SRC="x2.PNG" height=30></IMG></button>
+    <button onclick="velocidad(4)" type="button">x4</button>
+    
+    <button onclick="Sonido(false)" type="button"><IMG SRC="Sonidoff.PNG" height=30></IMG></button>
+    <button onclick="Sonido(true)" type="button"><IMG SRC="Sonidon.PNG" height=30></IMG></button>
+    
+    <button onclick="pantalla" type="button">Pantalla completa (No va)</button>
+    
+    <form action="" name="Nano" onsubmit="leer(); return false;">
+    <input Type="Text" size="3" value="1" name="Numero">
+    <input Type="submit" value="Cambiar velocidad (No va)">
+    </form>
+    
+    <script>
+    var video=document.getElementById("Nano");
+    function velocidad (v)
+        {
+        video.playbackRate=v;
+        }
+        
+    function sonido(s)
+        {
+        video.muted=true;
+        }
+    function sonido(s)
+        {
+        video.muted=false;
+        }
+        
+    function leer()
+        {
+        var cc=v.numero.value;
+        }
+        
+        
+    function pantalla()
+        {
+        video.requestFullscreen();
+        }
+        
+        
+var elem = document.getElementById("Nano");
+
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>    
+    <FONT size="5">No me funciona el sonido ni la pantalla completa</FONT><IMG SRC="Dolor.GIF" height=50></IMG>
+    </BODY>
+</HTML>

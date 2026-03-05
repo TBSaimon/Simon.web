@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<HTML lang=“es”>
+<HEAD> 
+<TITLE>Terciario</TITLE>  
+</HEAD>
+<BODY>
+  
+<IMG SRC="Modelo3D.JPG"height=400> </IMG>
+ <FORM ACTION="" NAME="formulario" ONSUBMIT="leernumeros(); return false">
+     <INPUT TYPE="text" SIZE="4" VALUE="0" NAME="numero1"> </INPUT>
+     <INPUT TYPE="text" SIZE="4" VALUE="0" NAME="numero2"> </INPUT>
+     <INPUT TYPE="submit" VALUE="Sumar dos números"> </INPUT>
+</FORM>
+<script>
+    function leernumeros()
+    {
+    sumar(formulario.numero1.value,formulario.numero2.value);
+    }
+    function sumar(a,b)
+    {var sum=Number(a)+Number(b);
+    alert(sum);
+    }
+</script>
+    
+</BODY>
+</HTML>
