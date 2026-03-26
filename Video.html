@@ -9,16 +9,16 @@ alert("En memoria de Leon, también llamado Nano");
 </script>
     <video src="Huroncete.mp4" id="Nano" width=60% autoplay="true" controls></video> <IMG src="Sad.jpg" width=600></IMG>
     <br><br>
-    <button onclick="velocidad(0)" type="button"><IMG SRC="Pause.PNG" height=30></IMG></button>
-    <button onclick="velocidad(1)" type="button"><IMG SRC="Play.PNG" height=30></IMG></button>
+    <button onclick="velocidad(0)" type="button"><IMG SRC="Pause.png" height=30></IMG></button>
+    <button onclick="velocidad(1)" type="button"><IMG SRC="Play.png" height=30></IMG></button>
     <button onclick="velocidad(0.5)" type="button">1/2</button>
-    <button onclick="velocidad(2)" type="button"><IMG SRC="x2.PNG" height=30></IMG></button>
+    <button onclick="velocidad(2)" type="button"><IMG SRC="x2.png" height=30></IMG></button>
     <button onclick="velocidad(4)" type="button">x4</button>
     
-    <button onclick="Sonido(false)" type="button"><IMG SRC="Sonidoff.PNG" height=30></IMG></button>
-    <button onclick="Sonido(true)" type="button"><IMG SRC="Sonidon.PNG" height=30></IMG></button>
+    <button onclick="Sonido(false)" type="button"><IMG SRC="Sonidoff.png" height=30></IMG></button>
+    <button onclick="Sonido(true)" type="button"><IMG SRC="Sonidon.png" height=30></IMG></button>
     
-    <button onclick="pantalla" type="button">Pantalla completa (No va)</button>
+    <button onclick="pantalla()" type="button">Pantalla completa</button>
     
     <form action="" name="Nano" onsubmit="leer(); return false;">
     <input Type="Text" size="3" value="1" name="Numero">
@@ -34,11 +34,11 @@ alert("En memoria de Leon, también llamado Nano");
         
     function sonido(s)
         {
-        video.muted=true;
+        video.muted=s;
         }
     function sonido(s)
         {
-        video.muted=false;
+        video.muted=s;
         }
         
     function leer()
@@ -65,6 +65,6 @@ function openFullscreen() {
   }
 }
 </script>    
-    <FONT size="5">No me funciona el sonido ni la pantalla completa</FONT><IMG SRC="Dolor.GIF" height=50></IMG>
+    <FONT size="5">No puedo comprobar si funciona el sonido</FONT><IMG SRC="Dolor.gif" height=50></IMG>
     </BODY>
 </HTML>
